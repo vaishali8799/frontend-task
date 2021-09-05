@@ -1,10 +1,10 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Cards from "./components/Cards";
 import data from "./components/colleges.json";
 function App() {
   const [limit, setlimit] = useState(0);
-  const [arr, setarr] = useState([]);
+  const [arr, ] = useState([]);
   let firstCol = [];
   let SecondCol = [];
 
@@ -20,32 +20,33 @@ function App() {
 
       if (
         scrollTop + clientHeight >= scrollHeight - 5 &&
-        limit <= data.length
+        arr.length <= data.length
       ) {
-        setlimit(limit + 10);
-        console.log(limit + 10);
-        loadData(limit + 10);
+        let a=limit+10
+        setlimit(a);
+        console.log(a);
+        console.log( loadData(a))
+        loadData(a);
       }
     },
     {
       passive: true,
     }
   );
-
+console.log(limit)
   const loadData = (limit) => {
     let i = limit;
     console.log(i)
-    //let newar=[...arr]
     if (limit < data.length) {
-      for (i; i <data.length; i++) {
+      for (i; i < limit+10; i++) {
         arr.push(data[i]);
       }
     }
-    //setarr(newar)
     firstCol = arr.filter((arr, index) => index % 2 === 0);
     SecondCol = arr.filter((arr, index) => index % 2);
   };
-  console.log(arr);
+  loadData(0)
+  //console.log(arr);
   return (
     <div>
       <div className='header'>
@@ -53,7 +54,7 @@ function App() {
         <hr />
       </div>
       <div className='container'>
-        {loadData(0)}
+        
         <div>
           {firstCol.map((item, index) => (
             <Cards key={index} detail={item} />

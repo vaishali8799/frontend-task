@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&display=swap");
+.container {
+  height: 400px;
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  border-radius: 8px !important;
+  margin:  30px 20px;
+  margin-bottom: 40px;
+  position:relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.head {
+  font-size: 24px;
+  font-weight: 700;
+}
+.subhead {
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+}
+.sub2 {
+  color: rgb(151, 149, 149);
+}
+.cardtop {
+  background-image: linear-gradient(
+      to top,
+      rgba(26, 26, 27, 0.52),
+      rgba(31, 30, 30, 0.73)
+    ),
+    url("./college_02.jpg") !important ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  height: 280px;
+
+  justify-content: space-between;
+}
+.cardbottom {
+  display: flex;
+  justify-content: space-between;
+}
+.param {
+  float: inline-end;
+  display: flex;
+  align-items: flex-end;
+}
+.param div {
+  margin: 10px;
+  padding: 5px 10px;
+  display: inline;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 20px;
+}
+.rank {
+  display: inline;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.ratecard {
+  text-align: center;
+  display: block;
+  margin: 12px;
+  color: white;
+  font-weight: 600;
+  height: 72px;
+  width: 80px;
+  font-size: 14px;
+  line-height: 0.7rem;
+  border-radius: 10px;
+  background-color: rgb(248, 174, 36);
+}
+.rate{
+  font-size: 18px;
+}
+.star{
+  font-size: 12px;
+  margin-top: -15px !important;
+}
+.offer {
+  background-color: rgb(196, 248, 244);
+  display: inline;
+  padding: 5px 12px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 0 20px 20px 0;
+}
+.login {
+  color: rgb(4, 189, 235);
+}
+.detail {
+  color: rgb(151, 149, 149);
+  font-weight: 800;
+  font-size: 15px;
+}
+.dis {
+  color: black;
+  font-weight: 800;
+}
+.range {
+  color: rgb(38, 207, 193);
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.collegefees {
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.collegedetails{
+  margin-bottom: 15px;
+}
+.collegedetails p {
+  margin-left: 10px;
+}
+.pay {
+  margin-top: 10px;
+  display: block;
+  color: red;
+  
+  font-size: 30px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.pay p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.free {
+  font-size: 16px;
+  font-weight: 1000;
+  
+  color: rgb(41, 190, 178);
+}
+.promote {
+  
+  
+  position: absolute;
+  top:-30px;
+  text-align: center;
+  right: 5px;
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: rgb(89, 130, 219);
+  color: white;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  
+}
+.promote:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 22px solid white;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+}
+
+.disc{
+  display: inline;
+  color: #fff;
+  background-color: red;
+  text-decoration: none !important;
+  font-size: 10px;
+  font-weight: 700;
+  padding:  2px 6px;
+}
+.originalfee{
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(151, 149, 149);
+  text-decoration: line-through;
+}
